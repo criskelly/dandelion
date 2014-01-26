@@ -185,7 +185,13 @@ body {
   opacity: .5;
 }
 
+/* content styles */
 
+.content {
+  position: relative;
+  top: 420px;
+  font-size: 2em;
+}
 
 
 /* responsive styles */
