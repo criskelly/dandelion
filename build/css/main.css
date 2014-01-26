@@ -13,7 +13,11 @@
 
 @font-face {
   font-family: 'JennaSue';
-  src: url('webfont.ttf') format('truetype');
+  src: url('JennaSue.eot');
+  src: local('☺'︎),
+    url('JennaSue.woff') format('woff'),
+    url('JennaSue.svg') format('svg'),
+    url('JennaSue.ttf') format('truetype');
 }
 @font-face {
   font-family: 'ShangriLa';
@@ -104,41 +108,36 @@ textarea {
    Cris Kelly's custom styles
    ========================================================================== */
 
-body {
+body, .content h1, .content h2, .content h3 {
   font-family: 'JennaSue', arial;
 }
 
 /* top content */
 .top-content {
   margin-top: 10px;
-  position: relative;
 }
-.logo-title {
-  position: absolute;
-  right: 20px;
-  top: 10px;
+.logo, .logo-title {
+  float: left;
 }
 .logo {
-  position: absolute;
+  width: 40%;
   z-index: 10;
 }
-
-/* boxes */
-.boxes {
+.logo-title {
   position: relative;
-  top: 70px;
-  right: 8px;
+  width: 55%;
+  top: 10px;
 }
 .box {
   height: 150px;
   width: 150px;
-  background-color: #435731;
+  background-color: #ade885;
   text-align: center;
   padding: 2px 5px;
-  position: absolute;
-  margin: 110px 5px 0;
+  position: relative;
   border-radius: 10px;
-  color: #e9cd3e;
+  float: left;
+  top: -220px;
 }
 .box p {
   display: inline-block;
@@ -147,25 +146,30 @@ body {
 }
 .box:hover {
   opacity: .9;
+}
+.box a {
+  display: inline-block;
+  width: 100%;
+  color: #314FA6;
+}
+.box a:hover {
   color: white;
 }
 .shop-box {
-  right: 55px;
+  left: 4%;
 }
 .sell-box {
-  right: 250px;
+  left: 9%;
 }
 
 
 /* menu styles */
 .main {
-  position: absolute;
-  right: 24px;
-  top: 90px;
   height: 280px;
-  background-color: #e9cd3e;
-  padding: 0 11px;
+  background-color: #314FA6;
   border-radius: 10px;
+  float: left;
+  margin-top: 20px;
 }
 .main ul {
   margin: 0 0 0 -43px ;
@@ -175,12 +179,12 @@ body {
   display: inline;
   float: left;
   list-style: none;
-  padding: 5px 30px;
+  padding: 5px 25px;
 }
 .main a {
   text-decoration: none;
   font-size: 2rem;
-  color: #435731;
+  color: #ade885;
 }
 .main a:hover {
   opacity: .5;
@@ -190,24 +194,18 @@ body {
 
 .content {
   position: relative;
-  top: 420px;
+  top: -100px;
+  clear: both;
   font-size: 2em;
+  text-align: center;
+}
+.content a {
+  text-decoration: none;
 }
 
 
-/* responsive styles */
 
-@media (min-width: 992px) {
-  .container {
-    width: 750px;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 749px) {
-  .logo {
-    display: none;
-  }
-}
+
 
 
 
@@ -327,6 +325,55 @@ img {
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+/* tablets and desktop */
+@media only screen and (min-width: 780px) {
+  .container {
+    width: 750px;
+  }
+}
+
+
+@media only screen and (max-width: 779px) {
+  .container {
+    width: 500px;
+  }
+  .top-content {
+    margin: 0;
+  }
+  .logo {
+    max-width: 100%;
+  }
+  .logo-title {
+    width: 100%;
+  }
+  .logo, .logo-title {
+    margin: 0 auto;
+    float: none;
+  }
+  .content {
+    clear: both;
+  }
+  .main {
+    float: none;
+    width: 433px;
+  }
+  .main ul {
+    margin-left: -24px;
+  }
+  .shop-box {
+    left: 9%;
+  }
+  .sell-box {
+    left: 18%;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+}
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
