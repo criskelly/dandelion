@@ -10,6 +10,16 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@font-face {
+  font-family: 'JennaSue';
+  src: url('webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ShangriLa';
+  src: url('webfont.ttf') format('truetype');
+}
+
+
 html,
 button,
 input,
@@ -90,9 +100,107 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Cris Kelly's custom styles
    ========================================================================== */
 
+body {
+  font-family: 'JennaSue', arial;
+}
+
+/* top content */
+.top-content {
+  margin-top: 10px;
+  position: relative;
+}
+.logo-title {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.logo {
+  position: absolute;
+  z-index: 10;
+}
+
+/* boxes */
+.boxes {
+  position: relative;
+  top: 70px;
+  right: 8px;
+}
+.box {
+  height: 150px;
+  width: 150px;
+  background-color: #435731;
+  text-align: center;
+  padding: 2px 5px;
+  position: absolute;
+  margin: 110px 5px 0;
+  border-radius: 10px;
+  color: #e9cd3e;
+}
+.box p {
+  display: inline-block;
+  font-size: 3rem;
+  margin-top: 36px;
+}
+.box:hover {
+  opacity: .9;
+  color: white;
+}
+.shop-box {
+  right: 55px;
+}
+.sell-box {
+  right: 250px;
+}
+
+
+/* menu styles */
+.main {
+  position: absolute;
+  right: 24px;
+  top: 90px;
+  height: 280px;
+  background-color: #e9cd3e;
+  padding: 0 11px;
+  border-radius: 10px;
+}
+.main ul {
+  margin: 0 0 0 -43px ;
+}
+.main ul li {
+  position: relative;
+  display: inline;
+  float: left;
+  list-style: none;
+  padding: 5px 30px;
+}
+.main a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #435731;
+}
+.main a:hover {
+  opacity: .5;
+}
+
+
+
+
+/* responsive styles */
+
+@media (min-width: 992px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 749px) {
+  .logo {
+    display: none;
+  }
+}
 
 
 
@@ -102,12 +210,9 @@ textarea {
 
 
 
-
-
-
-
-
-
+img {
+  max-width: 100%;
+}
 
 /* ==========================================================================
    Helper classes
