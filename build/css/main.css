@@ -13,15 +13,11 @@
 
 @font-face {
   font-family: 'JennaSue';
-  src: url('JennaSue.eot');
+  src: url('webfont.eot');
   src: local('☺'︎),
-    url('JennaSue.woff') format('woff'),
-    url('JennaSue.svg') format('svg'),
-    url('JennaSue.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'ShangriLa';
-  src: url('webfont.ttf') format('truetype');
+    url('webfont.woff') format('woff'),
+    url('webfont.svg') format('svg'),
+    url('webfont.ttf') format('truetype');
 }
 
 
