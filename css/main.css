@@ -108,7 +108,7 @@ textarea {
    Cris Kelly's custom styles
    ========================================================================== */
 
-body, .content h1, .content h2, .content h3 {
+body, .content h1, .content h2, .content h3, .reg-box h3 {
   font-family: 'JennaSue', arial;
 }
 
@@ -161,6 +161,16 @@ body, .content h1, .content h2, .content h3 {
 .sell-box {
   left: 9%;
 }
+.reg-box {
+  position: relative;
+  top: 168px;
+  left: 25%;
+}
+.reg-box a {
+  font-size: 2em;
+  margin: 0 auto;
+}
+
 
 
 /* menu styles */
@@ -189,6 +199,11 @@ body, .content h1, .content h2, .content h3 {
 .main a:hover {
   opacity: .5;
 }
+.reg-box a:hover {
+  color: white;
+  opacity: 1;
+}
+
 
 /* content styles */
 
@@ -339,7 +354,7 @@ img {
     width: 500px;
   }
   .top-content {
-    margin: 0;
+    margin: 0 0 0 3%;
   }
   .logo {
     max-width: 100%;
@@ -353,6 +368,7 @@ img {
   }
   .content {
     clear: both;
+    top: -130px;
   }
   .main {
     float: none;
@@ -367,21 +383,6 @@ img {
   .sell-box {
     left: 18%;
   }
-}
-
-
-@media only screen and (max-width: 480px) {
-
-}
-
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
