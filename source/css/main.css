@@ -208,9 +208,34 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   text-decoration: none;
 }
 
+/* shoppers page styles */
 
-
-
+.shoppers-content {
+  text-align: left;
+}
+.shoppers-content h1 {
+  font-size: 1em;
+  color: #ade885;
+  text-shadow: 1px 1px 1px black;
+}
+.shoppers-content h2, .shoppers-content h3 {
+  font-size: .8em;
+}
+.shoppers-content h2 {
+  color: #314FA6;
+}
+.shoppers-content h1, .shoppers-content h2 {
+  border-bottom: 2px dotted lightblue;
+  padding-bottom: 5px;
+}
+.shop-times p {
+  margin: 0 0 10px;
+  font-size: .8em;
+}
+.shop-lower-content p {
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-size: .7em;
+}
 
 
 

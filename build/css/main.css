@@ -10,15 +10,13 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+/*
+ * font-family: 'Montez', cursive;
+ * font-family: 'Patrick Hand SC', cursive;
+ * font-family: 'Love Ya Like A Sister', cursive;
+*/
 
-@font-face {
-  font-family: 'JennaSue';
-  src: url('webfont.eot');
-  src: local('☺'︎),
-    url('webfont.woff') format('woff'),
-    url('webfont.svg') format('svg'),
-    url('webfont.ttf') format('truetype');
-}
+
 
 
 html,
@@ -105,7 +103,7 @@ textarea {
    ========================================================================== */
 
 body, .content h1, .content h2, .content h3, .reg-box h3 {
-  font-family: 'JennaSue', arial;
+  font-family: 'Love Ya Like A Sister', cursive;
 }
 
 /* top content */
@@ -135,21 +133,18 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   float: left;
   top: -220px;
 }
-.box p {
-  display: inline-block;
-  font-size: 3rem;
-  margin-top: 36px;
-}
 .box:hover {
-  opacity: .9;
 }
 .box a {
   display: inline-block;
   width: 100%;
   color: #314FA6;
+  font-size: 2rem;
+  padding: 50px 0;
 }
-.box a:hover {
-  color: white;
+.box a:hover, .box:hover {
+  text-decoration: none;
+  opacity: .8;
 }
 .shop-box {
   left: 4%;
@@ -159,11 +154,11 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 }
 .reg-box {
   position: relative;
-  top: 168px;
-  left: 25%;
+  top: 175px;
+  left: 7%;
 }
-.reg-box a {
-  font-size: 2em;
+.main .reg-box a {
+  font-size: 1.8em;
   margin: 0 auto;
 }
 
@@ -178,7 +173,7 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   margin-top: 20px;
 }
 .main ul {
-  margin: 0 0 0 -43px ;
+  margin: 13px 0 0 -43px ;
 }
 .main ul li {
   position: relative;
@@ -189,7 +184,7 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 }
 .main a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.1rem;
   color: #ade885;
 }
 .main a:hover {
@@ -371,7 +366,13 @@ img {
     width: 433px;
   }
   .main ul {
-    margin-left: -24px;
+    margin: 13px 0 0 -25px ;
+  }
+  .main ul li {
+    margin-top: 12px;
+  }
+  .main .reg-box a {
+    margin-left: 10px;
   }
   .shop-box {
     left: 9%;
