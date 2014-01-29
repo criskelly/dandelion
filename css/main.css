@@ -106,93 +106,60 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   font-family: 'Love Ya Like A Sister', cursive;
 }
 
+/* navigation menu */
+
+.navbar {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* top content */
 .top-content {
   margin-top: 10px;
-}
-.logo, .logo-title {
-  float: left;
+  background: url('../img/grass.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 325px;
 }
 .logo {
-  width: 40%;
+  width: 50%;
   z-index: 10;
-}
-.logo-title {
-  position: relative;
-  width: 55%;
-  top: 10px;
+  float: left;
+  padding-top: 25px;
 }
 .box {
-  height: 150px;
+  height: 100px;
   width: 150px;
-  background-color: #ade885;
+  background-color: #f8aeb0;
   text-align: center;
   padding: 2px 5px;
-  position: relative;
   border-radius: 10px;
   float: left;
-  top: -220px;
+  border: 2px solid #6c4427;
+  position: relative;
+  top: 50px;
 }
 .box:hover {
+  background-color: #ffffff;
+  border: 2px dotted #6c4427;
 }
 .box a {
   display: inline-block;
   width: 100%;
-  color: #314FA6;
+  color: #6c4427;
   font-size: 2rem;
-  padding: 50px 0;
+  padding: 25px 0;
 }
 .box a:hover, .box:hover {
   text-decoration: none;
-  opacity: .8;
 }
 .shop-box {
-  left: 4%;
+  left: 10px;
 }
 .sell-box {
-  left: 9%;
-}
-.reg-box {
-  position: relative;
-  top: 175px;
-  left: 7%;
-}
-.main .reg-box a {
-  font-size: 1.8em;
-  margin: 0 auto;
-}
-
-
-
-/* menu styles */
-.main {
-  height: 280px;
-  background-color: #314FA6;
-  border-radius: 10px;
-  float: left;
-  margin-top: 20px;
-}
-.main ul {
-  margin: 13px 0 0 -43px ;
-}
-.main ul li {
-  position: relative;
-  display: inline;
-  float: left;
-  list-style: none;
-  padding: 5px 25px;
-}
-.main a {
-  text-decoration: none;
-  font-size: 1.1rem;
-  color: #ade885;
-}
-.main a:hover {
-  opacity: .5;
-}
-.reg-box a:hover {
-  color: white;
-  opacity: 1;
+  left: 25px;
 }
 
 
@@ -200,10 +167,9 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 
 .content {
   position: relative;
-  top: -100px;
+  top: 50px;
   clear: both;
   font-size: 2em;
-  text-align: center;
 }
 .content a {
   text-decoration: none;
@@ -216,7 +182,7 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 }
 .shoppers-content h1, .sellers-content h1 {
   font-size: 1em;
-  color: #ade885;
+  color: #f8aeb0;
   text-shadow: 1px 1px 1px black;
 }
 .shoppers-content h2, .shoppers-content h3,
@@ -228,7 +194,7 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 }
 .shoppers-content h1, .shoppers-content h2,
 .sellers-content h1 {
-  border-bottom: 2px dotted lightblue;
+  border-bottom: 2px dotted #6c4427;
   padding-bottom: 5px;
 }
 .shop-times p {
@@ -246,10 +212,10 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   font-size: .7em;
 }
 .sellers-content ol li, .sellers-content h3 {
-  color: #314FA6;
+  color: #f8aeb0;
 }
 .sellers-content a {
-  color: #ade885;
+  color: #f8aeb0;
   text-shadow: 1px 1px 1px black;
 }
 .sellers-content a:hover {
@@ -368,7 +334,7 @@ img {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
+   Media Queries for Responsive Design.
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
@@ -387,40 +353,29 @@ img {
   }
   .top-content {
     margin: 0 0 0 3%;
+    height: 400px;
   }
   .logo {
     max-width: 100%;
-  }
-  .logo-title {
-    width: 100%;
-  }
-  .logo, .logo-title {
+    height: 100%;
+    padding-top: 10px;
     margin: 0 auto;
     float: none;
   }
-  .content {
-    clear: both;
-    top: -130px;
-  }
-  .main {
-    float: none;
-    width: 433px;
-  }
-  .main ul {
-    margin: 13px 0 0 -25px ;
-  }
-  .main ul li {
-    margin-top: 12px;
-  }
-  .main .reg-box a {
-    margin-left: 10px;
+  .box {
+    top: -230px;
   }
   .shop-box {
-    left: 9%;
+    left: 50px;
   }
   .sell-box {
-    left: 18%;
+    left: 98px;
   }
+  .content {
+    clear: both;
+    top: -150px;
+  }
+
 }
 
 /* ==========================================================================
