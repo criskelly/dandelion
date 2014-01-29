@@ -211,21 +211,23 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 
 /* shoppers page styles */
 
-.shoppers-content {
+.shoppers-content, .sellers-content {
   text-align: left;
 }
-.shoppers-content h1 {
+.shoppers-content h1, .sellers-content h1 {
   font-size: 1em;
   color: #ade885;
   text-shadow: 1px 1px 1px black;
 }
-.shoppers-content h2, .shoppers-content h3 {
+.shoppers-content h2, .shoppers-content h3,
+.sellers-content h2, .sellers-content h3 {
   font-size: .8em;
 }
-.shoppers-content h2 {
+.shoppers-content h2, .sellers-content h2 {
   color: #314FA6;
 }
-.shoppers-content h1, .shoppers-content h2 {
+.shoppers-content h1, .shoppers-content h2,
+.sellers-content h1 {
   border-bottom: 2px dotted lightblue;
   padding-bottom: 5px;
 }
@@ -238,7 +240,21 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   font-size: .7em;
 }
 
+/* seller's page styles */
 
+.sellers-content p, .sellers-content ol li {
+  font-size: .7em;
+}
+.sellers-content ol li, .sellers-content h3 {
+  color: #314FA6;
+}
+.sellers-content a {
+  color: #ade885;
+  text-shadow: 1px 1px 1px black;
+}
+.sellers-content a:hover {
+  opacity: .7;
+}
 
 
 
