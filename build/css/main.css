@@ -182,6 +182,8 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 }
 .shoppers-content h1, .sellers-content h1 {
   font-size: 1em;
+}
+.shoppers-content h1, .sellers-content h1, .sellers-content h3 {
   color: #f8aeb0;
   text-shadow: 1px 1px 1px black;
 }
@@ -197,6 +199,25 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   border-bottom: 2px dotted #6c4427;
   padding-bottom: 5px;
 }
+.sale-location {
+  margin: 0 auto 40px auto;
+  text-align: center;
+  color: green;
+  width: 85%;
+}
+.sale-location h3 {
+  padding: 10px 0;
+  font-size: 1.5em;
+}
+.sale-location p {
+  line-height: .9em;
+  font-size: .8em;
+  margin: 18px 0;
+}
+.shop-times-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
 .shop-times p {
   margin: 0 0 10px;
   font-size: .8em;
@@ -211,13 +232,17 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 .sellers-content p, .sellers-content ol li {
   font-size: .7em;
 }
-.sellers-content ol li, .sellers-content h3 {
+.sellers-content ol li {
+  color: green;
+}
+
+.sellers-content h3 {
   color: #f8aeb0;
 }
 .sellers-content a {
-  color: #f8aeb0;
-  text-shadow: 1px 1px 1px black;
-}
+  color: green;
+/*  text-shadow: 1px 1px 1px black;
+*/}
 .sellers-content a:hover {
   opacity: .7;
 }
