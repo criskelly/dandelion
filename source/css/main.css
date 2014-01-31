@@ -101,7 +101,7 @@ textarea {
    Cris Kelly's custom styles
    ========================================================================== */
 
-body, .content h1, .content h2, .content h3, .reg-box h3 {
+body, .content h1, .content h2, .content h3, .reg-box h3, .pricing-wrapper h4, .top-content h4 {
   font-family: 'Love Ya Like A Sister', cursive;
 }
 
@@ -113,10 +113,18 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   width: 100%;
   margin: 0 auto;
 }
+.navbar-default {
+  background-color: #53a107;
+}
+.navbar-default .navbar-brand {
+  color: white;
+}
+.navbar .navbar-nav>li>a {
+  color: white;
+}
 
 /* top content */
 .top-content {
-  margin-top: 10px;
   background: url('../img/grass.png') no-repeat;
   background-size: contain;
   background-position: center;
@@ -126,7 +134,7 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   width: 50%;
   z-index: 10;
   float: left;
-  padding-top: 25px;
+  padding-top: 30px;
 }
 .box {
   height: 100px;
@@ -160,6 +168,19 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 .sell-box {
   left: 25px;
 }
+.top-content h4 {
+  float: left;
+  position: relative;
+  top: 40px;
+  left: 90px;
+}
+.top-content h4 a {
+  color: #53a107;
+}
+.top-content h4 a:hover {
+  text-decoration: none;
+  opacity: .5;
+}
 
 
 /* content styles */
@@ -173,16 +194,24 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 .content a {
   text-decoration: none;
 }
+.home-content {
+  width: 90%;
+  margin: 0 auto;
+}
+.home-content h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+}
 
 /* shoppers page styles */
 
-.shoppers-content, .sellers-content {
-  text-align: left;
-}
 .shoppers-content h1, .sellers-content h1 {
   font-size: 1em;
+  text-align: center;
 }
-.shoppers-content h1, .sellers-content h1, .sellers-content h3 {
+.shoppers-content h1, .sellers-content h1,
+.sellers-content h3, .shoppers-content h3 {
   color: #f8aeb0;
   text-shadow: 1px 1px 1px black;
 }
@@ -201,7 +230,7 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
 .sale-location {
   margin: 0 auto 40px auto;
   text-align: center;
-  color: green;
+  color: #53a107;
   width: 85%;
 }
 .sale-location h3 {
@@ -212,6 +241,9 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   line-height: .9em;
   font-size: .8em;
   margin: 18px 0;
+}
+.sale-location a {
+  font-size: .7em;
 }
 .shop-times-wrapper {
   width: 85%;
@@ -232,21 +264,26 @@ body, .content h1, .content h2, .content h3, .reg-box h3 {
   font-size: .7em;
 }
 .sellers-content ol li {
-  color: green;
+  color: #53a107;
 }
-
-.sellers-content h3 {
+.sellers-content h3, .shoppers-content h3 {
   color: #f8aeb0;
 }
 .sellers-content a {
-  color: green;
-/*  text-shadow: 1px 1px 1px black;
-*/}
+  color: #53a107;
+}
 .sellers-content a:hover {
   opacity: .7;
 }
 
+/* pricing page styles */
 
+.pricing-wrapper h1 {
+  font-size: 2rem;
+}
+.pricing-wrapper p, .pricing-wrapper h4 {
+  font-size: 1rem;
+}
 
 
 
