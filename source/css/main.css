@@ -208,13 +208,15 @@ body, .content h1, .content h2, .content h3,
 
 /* shoppers page styles */
 
-.shoppers-content h1, .sellers-content h1, .returns-content h1 {
+.shoppers-content h1, .sellers-content h1,
+.returns-content h1, .registered-content h1 {
   font-size: 1em;
   text-align: center;
 }
 .shoppers-content h1, .sellers-content h3,
 .sellers-content h1, .shoppers-content h3,
-.returns-content h1, .returns-content h3 {
+.returns-content h1, .returns-content h3,
+.registered-content h1 {
   color: #f8aeb0;
   text-shadow: 1px 1px 1px black;
 }
@@ -266,26 +268,29 @@ body, .content h1, .content h2, .content h3,
 
 /* seller's page styles */
 
-.sellers-content p, .sellers-content ol li, .returns-content p {
+.sellers-content p, .sellers-content ol li,
+.returns-content p, .registered-content p {
   font-size: .7em;
 }
 .sellers-content h3, .shoppers-content h3 {
   color: #f8aeb0;
 }
 .sellers-content a, .returns-content a,
-.sellers-content ol li, .shop-lower-content a {
+.sellers-content ol li, .shop-lower-content a,
+.registered-content a {
   color: #53a107;
 }
 .sellers-content a:hover,
 .returns-content a:hover,
 .shop-lower-content a:hover,
+.registered-content a:hover,
 .footer a:hover {
   opacity: .7;
 }
 
 /* pricing page styles */
 
-.pricing-wrapper h1 {
+.pricing-wrapper h1, .registered-content h1 {
   font-size: 2rem;
 }
 .pricing-wrapper p, .pricing-wrapper h4 {
