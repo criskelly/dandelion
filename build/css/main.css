@@ -216,6 +216,9 @@ body, .content h1, .content h2, .content h3, .reg-box h3, .pricing-wrapper h4, .
   color: #f8aeb0;
   text-shadow: 1px 1px 1px black;
 }
+.shoppers-content h3 {
+  text-align: center;
+}
 .shoppers-content h2, .shoppers-content h3,
 .sellers-content h2, .sellers-content h3 {
   font-size: .8em;
@@ -234,9 +237,10 @@ body, .content h1, .content h2, .content h3, .reg-box h3, .pricing-wrapper h4, .
   color: #53a107;
   width: 85%;
 }
-.sale-location h3 {
-  padding: 10px 0;
+.shoppers-content .sale-location h3 {
   font-size: 1.5em;
+  color: #53a107;
+  text-shadow: 1px 1px 1px black;
 }
 .sale-location p {
   line-height: .9em;
@@ -414,8 +418,9 @@ img {
     width: 500px;
   }
   .top-content {
-    margin: 0 0 0 3%;
     height: 400px;
+    background-size: contain;
+    background-position-y: 63%;
   }
   .logo {
     max-width: 100%;
@@ -437,7 +442,10 @@ img {
     clear: both;
     top: -150px;
   }
-
+  .top-content h4 {
+    top: -140px;
+    left: -150px;
+  }
 }
 
 /* ==========================================================================
