@@ -276,7 +276,10 @@ body, .content h1, .content h2, .content h3,
 .sellers-content ol li, .shop-lower-content a {
   color: #53a107;
 }
-.sellers-content a:hover, .returns-content a:hover {
+.sellers-content a:hover,
+.returns-content a:hover,
+.shop-lower-content a:hover,
+.footer a:hover {
   opacity: .7;
 }
 
@@ -306,6 +309,10 @@ body, .content h1, .content h2, .content h3,
 }
 .footer-content-l p {
   margin: 0;
+}
+.footer-content-l a:hover {
+  text-decoration: none;
+  color: black;
 }
 .footer-content-r {
   right: 20px;
