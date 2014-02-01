@@ -102,7 +102,9 @@ textarea {
    Cris Kelly's custom styles
    ========================================================================== */
 
-body, .content h1, .content h2, .content h3, .reg-box h3, .pricing-wrapper h4, .top-content h4 {
+body, .content h1, .content h2, .content h3,
+.reg-box h3, .pricing-wrapper h4, .top-content h4,
+.footer-content-l h3 {
   font-family: 'Love Ya Like A Sister', cursive;
 }
 
@@ -114,13 +116,13 @@ body, .content h1, .content h2, .content h3, .reg-box h3, .pricing-wrapper h4, .
   width: 100%;
   margin: 0 auto;
 }
-.navbar-default {
+.navbar-default, .footer {
   background-color: #53a107;
 }
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .footer {
   color: white;
 }
-.navbar .navbar-nav>li>a {
+.navbar .navbar-nav>li>a, .footer a {
   color: white;
 }
 
@@ -207,12 +209,13 @@ body, .content h1, .content h2, .content h3, .reg-box h3, .pricing-wrapper h4, .
 
 /* shoppers page styles */
 
-.shoppers-content h1, .sellers-content h1 {
+.shoppers-content h1, .sellers-content h1, .returns-content h1 {
   font-size: 1em;
   text-align: center;
 }
-.shoppers-content h1, .sellers-content h1,
-.sellers-content h3, .shoppers-content h3 {
+.shoppers-content h1, .sellers-content h3,
+.sellers-content h1, .shoppers-content h3,
+.returns-content h1, .returns-content h3 {
   color: #f8aeb0;
   text-shadow: 1px 1px 1px black;
 }
@@ -259,25 +262,22 @@ body, .content h1, .content h2, .content h3, .reg-box h3, .pricing-wrapper h4, .
   font-size: .8em;
 }
 .shop-lower-content p {
-  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-size: .7em;
 }
 
 /* seller's page styles */
 
-.sellers-content p, .sellers-content ol li {
+.sellers-content p, .sellers-content ol li, .returns-content p {
   font-size: .7em;
-}
-.sellers-content ol li {
-  color: #53a107;
 }
 .sellers-content h3, .shoppers-content h3 {
   color: #f8aeb0;
 }
-.sellers-content a {
+.sellers-content a, .returns-content a,
+.sellers-content ol li, .shop-lower-content a {
   color: #53a107;
 }
-.sellers-content a:hover {
+.sellers-content a:hover, .returns-content a:hover {
   opacity: .7;
 }
 
@@ -288,6 +288,29 @@ body, .content h1, .content h2, .content h3, .reg-box h3, .pricing-wrapper h4, .
 }
 .pricing-wrapper p, .pricing-wrapper h4 {
   font-size: 1rem;
+}
+
+/* footer styles */
+
+.footer {
+  position: relative;
+  margin: 100px auto 25px auto;
+  height: 115px;
+}
+.footer-content-l, .footer-content-r {
+  position: absolute;
+}
+.footer-content-l h3 {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px black;
+  margin: 0 0 10px 0;
+}
+.footer-content-l p {
+  margin: 0;
+}
+.footer-content-r {
+  right: 20px;
+  top: 20px;
 }
 
 
@@ -418,7 +441,7 @@ img {
     width: 500px;
   }
   .top-content {
-    height: 400px;
+    height: 450px;
     background-size: contain;
     background-position-y: 63%;
   }
@@ -430,7 +453,7 @@ img {
     float: none;
   }
   .box {
-    top: -230px;
+    top: -250px;
   }
   .shop-box {
     left: 50px;
@@ -443,8 +466,11 @@ img {
     top: -150px;
   }
   .top-content h4 {
-    top: -140px;
+    top: -150px;
     left: -150px;
+  }
+  .footer {
+    margin: 0;
   }
 }
 
