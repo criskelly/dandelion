@@ -232,7 +232,8 @@ body, .content h1, .content h2, .content h3,
   color: #314FA6;
 }
 .shoppers-content h1, .shoppers-content h2,
-.sellers-content h1 {
+.sellers-content h1, .registered-content h1,
+.returns-content h1 {
   border-bottom: 2px dotted #6c4427;
   padding-bottom: 5px;
 }
