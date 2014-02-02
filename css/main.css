@@ -122,8 +122,9 @@ body, .content h1, .content h2, .content h3,
 .navbar-default .navbar-brand, .footer {
   color: white;
 }
-.navbar .navbar-nav>li>a, .footer a {
+.navbar .navbar-nav>li>a {
   color: white;
+  font-size: 1.5em;
 }
 
 /* top content */
@@ -159,7 +160,7 @@ body, .content h1, .content h2, .content h3,
   display: inline-block;
   width: 100%;
   color: #6c4427;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 25px 0;
 }
 .box a:hover, .box:hover {
@@ -174,8 +175,8 @@ body, .content h1, .content h2, .content h3,
 .top-content h4 {
   float: left;
   position: relative;
-  top: 40px;
-  left: 90px;
+  top: 50px;
+  left: 80px;
 }
 .top-content h4 a {
   color: #53a107;
@@ -211,7 +212,6 @@ body, .content h1, .content h2, .content h3,
 
 .shoppers-content h1, .sellers-content h1,
 .returns-content h1, .registered-content h1 {
-  font-size: 1em;
   text-align: center;
 }
 .shoppers-content h1, .sellers-content h3,
@@ -224,10 +224,10 @@ body, .content h1, .content h2, .content h3,
 .shoppers-content h3 {
   text-align: center;
 }
-.shoppers-content h2, .shoppers-content h3,
+/*.shoppers-content h2, .shoppers-content h3,
 .sellers-content h2, .sellers-content h3 {
   font-size: .8em;
-}
+}*/
 .shoppers-content h2, .sellers-content h2 {
   color: #314FA6;
 }
@@ -244,38 +244,27 @@ body, .content h1, .content h2, .content h3,
   width: 85%;
 }
 .shoppers-content .sale-location h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   color: #53a107;
   text-shadow: 1px 1px 1px black;
 }
 .sale-location p {
-  line-height: .9em;
-  font-size: .8em;
+  line-height: .8em;
   margin: 18px 0;
-}
-.sale-location a {
-  font-size: .7em;
 }
 .shop-times-wrapper {
   width: 85%;
   margin: 0 auto;
 }
-.shop-times p {
-  margin: 0 0 10px;
-  font-size: .8em;
-}
-.shop-lower-content p {
-  font-size: .7em;
-}
+
 
 /* seller's page styles */
 
-.sellers-content p, .sellers-content ol li,
-.returns-content p, .registered-content p {
-  font-size: .7em;
-}
 .sellers-content h3, .shoppers-content h3 {
   color: #f8aeb0;
+}
+.sellers-content ol {
+  margin: 30px;
 }
 .sellers-content a, .returns-content a,
 .sellers-content ol li, .shop-lower-content a,
@@ -304,26 +293,29 @@ body, .content h1, .content h2, .content h3,
 .footer {
   position: relative;
   margin: 100px auto 25px auto;
-  height: 115px;
+  height: 133px;
 }
 .footer-content-l, .footer-content-r {
   position: absolute;
 }
 .footer-content-l h3 {
-  font-size: 1.2em;
   text-shadow: 1px 1px 1px black;
   margin: 0 0 10px 0;
 }
 .footer-content-l p {
   margin: 0;
 }
+.footer a, .footer-content-l p {
+  font-size: 2em;
+  color: white;
+}
 .footer-content-l a:hover {
   text-decoration: none;
   color: black;
 }
 .footer-content-r {
-  right: 20px;
-  top: 20px;
+  right: 30px;
+  top: 28px;
 }
 
 
@@ -469,7 +461,7 @@ img {
     top: -250px;
   }
   .shop-box {
-    left: 50px;
+    left: 70px;
   }
   .sell-box {
     left: 98px;
@@ -480,7 +472,12 @@ img {
   }
   .top-content h4 {
     top: -150px;
-    left: -150px;
+    float: none;
+    position: relative;
+  }
+  .top-content h4 a {
+    position: absolute;
+    left: 66px;
   }
   .footer {
     margin: 0;
