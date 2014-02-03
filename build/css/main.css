@@ -211,29 +211,26 @@ body, .content h1, .content h2, .content h3,
 /* shoppers page styles */
 
 .shoppers-content h1, .sellers-content h1,
-.returns-content h1, .registered-content h1 {
+.returns-content h1, .registered-content h1,
+.contact-content h1 {
   text-align: center;
 }
 .shoppers-content h1, .sellers-content h3,
 .sellers-content h1, .shoppers-content h3,
 .returns-content h1, .returns-content h3,
-.registered-content h1 {
+.registered-content h1, .contact-content h1 {
   color: #f8aeb0;
   text-shadow: 1px 1px 1px black;
 }
 .shoppers-content h3 {
   text-align: center;
 }
-/*.shoppers-content h2, .shoppers-content h3,
-.sellers-content h2, .sellers-content h3 {
-  font-size: .8em;
-}*/
 .shoppers-content h2, .sellers-content h2 {
   color: #314FA6;
 }
 .shoppers-content h1, .shoppers-content h2,
 .sellers-content h1, .registered-content h1,
-.returns-content h1 {
+.returns-content h1, .contact-content h1 {
   border-bottom: 2px dotted #6c4427;
   padding-bottom: 5px;
 }
@@ -268,7 +265,7 @@ body, .content h1, .content h2, .content h3,
 }
 .sellers-content a, .returns-content a,
 .sellers-content ol li, .shop-lower-content a,
-.registered-content a {
+.registered-content a, .contact-content a {
   color: #53a107;
 }
 .sellers-content a:hover,
@@ -288,12 +285,22 @@ body, .content h1, .content h2, .content h3,
   font-size: 1rem;
 }
 
+/* contact page styles */
+
+.contact-content {
+  text-align: center;
+}
+.contact-content h1 {
+  margin-bottom: 25px;
+}
+
+
 /* footer styles */
 
 .footer {
   position: relative;
-  margin: 100px auto 25px auto;
   height: 133px;
+  top: 100px;
 }
 .footer-content-l, .footer-content-r {
   position: absolute;
@@ -317,7 +324,6 @@ body, .content h1, .content h2, .content h3,
   right: 30px;
   top: 28px;
 }
-
 
 
 
@@ -443,10 +449,10 @@ img {
 
 @media only screen and (max-width: 779px) {
   .container {
-    width: 500px;
+    width: 750px;
   }
   .top-content {
-    height: 450px;
+    height: 550px;
     background-size: contain;
     background-position-y: 63%;
   }
@@ -458,22 +464,23 @@ img {
     float: none;
   }
   .box {
-    top: -250px;
+    top: -270px;
   }
   .shop-box {
-    left: 70px;
+    left: 170px;
   }
   .sell-box {
-    left: 98px;
+    left: 250px;
   }
   .content {
     clear: both;
     top: -150px;
   }
   .top-content h4 {
-    top: -150px;
+    top: -158px;
     float: none;
     position: relative;
+    left: 200px;
   }
   .top-content h4 a {
     position: absolute;
@@ -481,7 +488,9 @@ img {
   }
   .footer {
     margin: 0;
+    top: -100px;
   }
+
 }
 
 /* ==========================================================================
