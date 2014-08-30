@@ -277,12 +277,7 @@ body, .content h1, .content h2, .content h3,
 
 /* pricing page styles */
 
-.pricing-wrapper h1, .registered-content h1 {
-  font-size: 2rem;
-}
-.pricing-wrapper p, .pricing-wrapper h4 {
-  font-size: 1rem;
-}
+
 
 /* contact page styles */
 
